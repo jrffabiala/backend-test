@@ -1,0 +1,148 @@
+:root {
+  --color-background: #E1E2E9;
+  --color-secondary: #6BA2E6;
+  --color-content: #EEEFF3;
+  --color-error: #c94745;
+  --color-dark-grey: #797988;
+  --color-white: #FFF;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
+  border-radius: 1rem;
+  background-color: var(--color-content);
+  min-height: 7rem;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.profile-banner{
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-banner span {
+  padding: 1rem;
+}
+
+.login-register__form {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.dashboard-form {
+  padding-top: 5rem;
+}
+
+.page-header {
+	text-align: center;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}	
+
+.create-user__btn {
+  margin: 7rem 0rem;
+}
+
+.error {
+  color: var(--color-error);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.users-table {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto; 
+  width: 70%; 
+}
+
+.reports-table {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto; 
+  width: 50%; 
+}
+
+table { 
+  border-collapse: collapse; 
+}
+
+th, td { 
+  padding: 8px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+}
+
+th { 
+  text-align: center;
+}
+
+.links:link,
+.links:visited {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2rem 0rem;
+  font-size: 1.5rem;
+  color: var(--color-dark-grey);
+}
+
+.links:hover {
+  color: var(--color-secondary);
+}
+
+.button {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem;
+  letter-spacing: .1rem;
+} 
+
+.input {
+  font-size: 1.4rem;
+  border: none;
+  color: var(--color-dark-grey);
+  margin: .5rem;
+  border-radius: .5rem;
+}
+
